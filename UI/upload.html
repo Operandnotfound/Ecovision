@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Waste Image - EcoVision</title>
+  <link rel="stylesheet" href="upload.css"/>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h2>Upload Waste Image</h2>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <label class="custom-file-upload">
+      <input type="file" name="file" id="file" accept="image/*" required>
+      📷 Choose Image
+    </label>
+
+    <div id="preview-container" class="preview-container" style="display: none;">
+      <h3>Preview</h3>
+      <img id="preview" src="" alt="Image Preview" class="preview-img" />
+    </div>
+
+    <button type="submit">Predict</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
